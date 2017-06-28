@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>review</title>
+	
+	<style type="text/css">
+		html{
+			border: 1px solid blue;
+			height: 100%;
+		}
+	
+		body{
+			height: 100%;
+			border: 1px solid red;
+		}
+		
+		
+		
+		#view1{
+			height: 100%;
+		}
+		
+		header{
+			border: 1px solid black;
+			height: 20%;
+		}
+		
+		section{
+			border: 1px solid black;
+			height: 60%;
+			position:relative;
+		}
+		
+		#text{
+			border: 1px solid blue;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 30%;
+			height: auto;
+		}
+		
+		footer{
+			height: 20%;
+			border: 1px solid black;
+		}
+		
+		#slide{
+			position:absolute;
+			bottom:0px;
+			left:50%;
+			height:5px;
+			width:100px;
+			background-color:blue;
+			color:white;
+			transition: all .5s ease;
+			z-index:1;
+			cursor:pointer;
+		}
+		#slide:hover{
+			height:500px;
+		}
+		#slide:active{
+			height:5px;
+			
+		}
+		
+		
+		
+	/* 	#slide:hover > div{
+			height:30px;
+		} */
+		
+	/* 	#slide div{
+			background-color:pink;
+			color:white;
+			overflow:hidden;
+			height:0px;
+			z-index:2;
+			cursor:pointer;
+		}
+		
+		div:active #slide{
+			height:5px;
+			
+		} */
+		
+		
+	</style>
+	
+</head>
+<body>
+	<div id="view1">
+		<header>
+			<h3>머리</h3>
+		</header>
+		
+		<section>
+			<div id="text">몸통</div>
+			<div id="slide">dkanrjsk
+			</div>
+		</section>
+		
+		<footer>
+			<h3>하단</h3>
+		</footer>
+	</div>
+	
+	<div id="view2">
+		
+	</div>
+</body>
+</html>

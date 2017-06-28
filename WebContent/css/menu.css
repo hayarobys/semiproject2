@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: "Myriad";
+	src: url('/kanye/font/Myriad-Pro-Bold_31631.eot')
+		format('embedded-opentype');
+	src: url('/kanye/font/Myriad-Pro-Bold_31631.ttf') format('truetype');
+	src: url('/kanye/font/Myriad-Pro-Bold_31631.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	background-color: #edede4;
+}
+
+
+.menu div, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	z-index: 10;
+	width: 100px;
+	height: 100px
+}
+
+.menu ul li {
+	float: left;
+	z-index: 10;
+	list-style-type: none;
+}
+
+.menu a {
+	font-family: "Myriad";
+	z-index: 10;
+	color: #b3a695;
+	font-size: 30px;
+	padding: 0 10px 0 10px;
+	text-decoration: none;
+}
+
+.menu  a:hover {
+	color: #6b6358;
+	z-index: 10;
+}
+
+.menu  ul ul {
+	display: none;
+}
+
+.menu  ul:hover ul {
+	display: block;
+	padding: 15px 0px 0px 0px;
+}
+
+.menu  ul li:hover li {
+	padding: 10px 5px 10px 5px;
+}
