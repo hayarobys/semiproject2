@@ -24,6 +24,9 @@ public class ReviewDeleteAction implements Action {
 		YZReviewDAO reviewDAO = new YZReviewDAO();
 		boolean result = reviewDAO.deleteReview(reviewNo);
 		
+		// 2-1. 실제 물리 파일의 삭제를 진행한다.
+		// 이부분이 빠져있었군!
+		
 		// 3. JSON에 담아 웹페이지로 전송한다.
 		JSONObject obj = new JSONObject();
 		
